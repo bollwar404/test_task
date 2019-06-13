@@ -1,0 +1,157 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "WDcVWDtHun6YjZ5ImyORwp2qGxY=",
+			"origin": "vendor/github.com/ghodss/yaml",
+			"path": "github.com/ghodss/yaml",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "qlEzrgKgIkh7y0ePm9BNo1cNdXo=",
+			"origin": "vendor/github.com/gin-contrib/sse",
+			"path": "github.com/gin-contrib/sse",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "90S9sFqcIo/uuwQzz1t/wYs7GEs=",
+			"origin": "vendor/github.com/gin-gonic/gin",
+			"path": "github.com/gin-gonic/gin",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "BjShmaQTKI8+411rCb7LFqJkLA0=",
+			"origin": "vendor/github.com/gin-gonic/gin/binding",
+			"path": "github.com/gin-gonic/gin/binding",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "woO1qIxIeQ1bcbPSiMfAKk3r4xg=",
+			"origin": "vendor/github.com/gin-gonic/gin/json",
+			"path": "github.com/gin-gonic/gin/json",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "f1n8P2YAi3o+X0//dkoDJ822zW0=",
+			"origin": "vendor/github.com/gin-gonic/gin/render",
+			"path": "github.com/gin-gonic/gin/render",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "JQPCz2eb1nfugBO9WWLrUCR7C9E=",
+			"origin": "vendor/github.com/go-redis/redis",
+			"path": "github.com/go-redis/redis",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "tZJRl4B7hKoRe+nWAMA4JtsM7Kc=",
+			"origin": "vendor/github.com/go-redis/redis/internal",
+			"path": "github.com/go-redis/redis/internal",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "GQZsUVg/+6UpQAYpc4luMvMutSI=",
+			"origin": "vendor/github.com/go-redis/redis/internal/consistenthash",
+			"path": "github.com/go-redis/redis/internal/consistenthash",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "l66eTZiJqueypc56HXCakGDm784=",
+			"origin": "vendor/github.com/go-redis/redis/internal/hashtag",
+			"path": "github.com/go-redis/redis/internal/hashtag",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "JYkA0l4mZ6WaB8mpGq/uy9bkpxI=",
+			"origin": "vendor/github.com/go-redis/redis/internal/pool",
+			"path": "github.com/go-redis/redis/internal/pool",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "zCo0t+gRBbctwyIpkDLrqRFtXew=",
+			"origin": "vendor/github.com/go-redis/redis/internal/proto",
+			"path": "github.com/go-redis/redis/internal/proto",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "1PH2NoAB/u3IZmLYyCrIbOzqLZ4=",
+			"origin": "vendor/github.com/go-redis/redis/internal/util",
+			"path": "github.com/go-redis/redis/internal/util",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "CGj8VcI/CpzxaNqlqpEVM7qElD4=",
+			"origin": "vendor/github.com/golang/protobuf/proto",
+			"path": "github.com/golang/protobuf/proto",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "LypWgKRSjk9lcUX+dZpadFUmpe8=",
+			"origin": "vendor/github.com/json-iterator/go",
+			"path": "github.com/json-iterator/go",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "Aulh7C5SVOA4Jzt5eHNH6197Mbk=",
+			"origin": "vendor/github.com/konsorten/go-windows-terminal-sequences",
+			"path": "github.com/konsorten/go-windows-terminal-sequences",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "74gCzvJiE6bXX3i4vIVCYhffDHc=",
+			"origin": "vendor/github.com/mattn/go-isatty",
+			"path": "github.com/mattn/go-isatty",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "ZTcgWKWHsrX0RXYVXn5Xeb8Q0go=",
+			"origin": "vendor/github.com/modern-go/concurrent",
+			"path": "github.com/modern-go/concurrent",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "qvH48wzTIV3QKSDqI0dLFtVjaDI=",
+			"origin": "vendor/github.com/modern-go/reflect2",
+			"path": "github.com/modern-go/reflect2",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "SVO+Zm6SNwWrpgyc6mcTXbH4aJ8=",
+			"origin": "vendor/github.com/sirupsen/logrus",
+			"path": "github.com/sirupsen/logrus",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "Nl8u5pNlN3FyZ/ieMgodi/+vp38=",
+			"origin": "vendor/github.com/tkanos/gonfig",
+			"path": "github.com/tkanos/gonfig",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "aQWIZ8+XJyVCik+C3GQsohOOj0k=",
+			"origin": "vendor/github.com/ugorji/go/codec",
+			"path": "github.com/ugorji/go/codec",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "8gJjRi/3ZyVZlVp0YEjUm/+aLSU=",
+			"origin": "vendor/golang.org/x/sys/unix",
+			"path": "golang.org/x/sys/unix",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "P/k5ZGf0lEBgpKgkwy++F7K1PSg=",
+			"origin": "vendor/gopkg.in/go-playground/validator.v8",
+			"path": "gopkg.in/go-playground/validator.v8",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "QqDq2x8XOU7IoOR98Cx1eiV5QY8=",
+			"origin": "vendor/gopkg.in/yaml.v2",
+			"path": "gopkg.in/yaml.v2",
+			"revision": ""
+		}
+	],
+	"rootPath": "test_task"
+}

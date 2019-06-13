@@ -1,0 +1,21 @@
+{
+  "Server": {
+    "Host": "0.0.0.0",
+    "Port": "3333"
+  },
+  "Storage": {
+    "Redis": {
+      "Host": "0.0.0.0",
+      "Port": "6379",
+      "Password": ""
+    }
+  },
+  "Requests": {
+    "Aviasales": {
+      "Places": {
+        "Url": "https://places.aviasales.ru/v2/places.json?types%5B%5D=city&types%5B%5D=airport&term=",
+        "Timeout": 2
+      }
+    }
+  }
+}
