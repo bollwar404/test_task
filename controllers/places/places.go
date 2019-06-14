@@ -1,12 +1,11 @@
 package places
 
 import (
+	"github.com/gin-gonic/gin"
 	"gopkg.in/go-playground/validator.v9"
 	"net/http"
 	"test_task/logger"
 	"test_task/models/place"
-
-	"github.com/gin-gonic/gin"
 )
 
 var log = logger.GetLogger("1", "2")
@@ -34,10 +33,5 @@ func FetchPlace(c *gin.Context) {
 		return
 	}
 
-	result := place.FetchPlace(identifier, locale)
-	if len(result) == 0 {
-		c.JSON(200, []string{})
-	} else {
-		c.JSON(200, result)
-	}
+	c.JSON(http.StatusOK, place.FetchPlace(identifier, locale))
 }

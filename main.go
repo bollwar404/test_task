@@ -15,28 +15,35 @@ import (
 
 var log = logger.GetLogger("main", "root")
 
+func initAdminRoutes(group *gin.RouterGroup) {
+	group.GET("/drop", admin.DropCache)
+}
+
+func initPlacesRoutes(group *gin.RouterGroup) {
+	group.GET("/:identifier", places.FetchPlace)
+}
+
 func main() {
 	log.Info("Start server creation")
+
 	storage.CheckDBConnections()
+
 	router := gin.New()
 	router.Use(ginlogrus.Logger(logrus.New()), gin.Recovery())
+
 	v1 := router.Group("/api/v1")
 
 	placesGroup := v1.Group("/places")
-	{
-		placesGroup.GET("/:identifier", places.FetchPlace)
-	}
+	initPlacesRoutes(placesGroup)
 
 	adminGroup := router.Group("/admin", gin.BasicAuth(gin.Accounts{
 		"admin": "admin",
 	}))
-
-	{
-		adminGroup.GET("/drop", admin.DropCache)
-	}
+	initAdminRoutes(adminGroup)
 
 	serverAddress := strings.Join([]string{config.Configuration.Server.Host, config.Configuration.Server.Port}, ":")
 	log.Info("Server listening ", serverAddress)
 	err := router.Run(serverAddress)
+
 	utils.HandleError(err, log)
 }

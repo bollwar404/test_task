@@ -1,7 +1,6 @@
 package place
 
 import (
-	"fmt"
 	"test_task/logger"
 	"test_task/requests/aviasales"
 	"test_task/storage/cacheStore"
@@ -19,29 +18,25 @@ type Place struct {
 type Places []Place
 
 func FetchPlace(identifier, locale string) Places {
-	var result Places
+	result := make(Places, 0)
 
-	cacheKey := identifier + "_" + locale
-
-	fromCache := cacheStore.Get(cacheKey)
-	if fromCache != "" {
-		log.Info("From cache by identifier ", cacheKey)
-		utils.FromJSON(fromCache, &result, log)
-		return result
-	}
-
-	data := aviasales.GetPlaces(identifier, locale)
-	for _, item := range data {
-		if item.Type == "city" {
-			result = append(result, Place{item.Code, item.CountryName, item.Name})
-		} else {
-			result = append(result, Place{item.Code, item.CityName, item.Name})
+	fromCache := cacheStore.Get(identifier, locale)
+	if fromCache == "" {
+		log.Info("No cache by identifier ", identifier, "_", locale)
+		data := aviasales.GetPlaces(identifier, locale)
+		for _, item := range data {
+			if item.Type == "city" {
+				result = append(result, Place{item.Code, item.CountryName, item.Name})
+			} else {
+				result = append(result, Place{item.Code, item.CityName, item.Name})
+			}
 		}
-	}
-	fmt.Print()
 
-	if len(result) != 0 {
-		cacheStore.Set(cacheKey, string(utils.ToJSON(result, log)))
+		if len(result) != 0 {
+			cacheStore.Set(identifier, locale, string(utils.ToJSON(result, log)))
+		}
+	} else {
+		utils.FromJSON(fromCache, &result, log)
 	}
 
 	return result
