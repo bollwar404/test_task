@@ -3,6 +3,7 @@ package aviasales
 import (
 	"bytes"
 	"io/ioutil"
+	"net"
 	"net/http"
 	"net/url"
 	"test_task/config"
@@ -40,6 +41,10 @@ func GetPlaces(identifier, locale string) PlacesResponse {
 
 	log.Info("Start send request to ", uri)
 	resp, err := client.Get(uri)
+	if err, ok := err.(net.Error); ok && err.Timeout() {
+		log.Error("Request timed out")
+		return data
+	}
 	utils.HandleError(err, log)
 	defer resp.Body.Close()
 	log.Info("request finished")

@@ -1,0 +1,63 @@
+hash: ff296ad7598deaa1ddde05261bec1e785afbd22d914460ae4f60165b62f7a579
+updated: 2019-06-14T12:35:39.317932846+03:00
+imports:
+- name: github.com/gin-contrib/sse
+  version: 54d8467d122d380a14768b6b4e5cd7ca4755938f
+- name: github.com/gin-gonic/gin
+  version: b75d67cd51eb53c3c3a2fc406524c940021ffbda
+  subpackages:
+  - binding
+  - internal/json
+  - render
+- name: github.com/go-playground/locales
+  version: 630ebbb602847eba93e75ae38bbc7bb7abcf1ff3
+  subpackages:
+  - currency
+- name: github.com/go-playground/universal-translator
+  version: 71201497bace774495daed26a3874fd339e0b538
+- name: github.com/go-redis/redis
+  version: 75795aa4236dc7341eefac3bbe945e68c99ef9df
+  subpackages:
+  - internal
+  - internal/consistenthash
+  - internal/hashtag
+  - internal/pool
+  - internal/proto
+  - internal/util
+- name: github.com/golang/protobuf
+  version: b285ee9cfc6c881bb20c0d8dc73370ea9b9ec90f
+  subpackages:
+  - proto
+- name: github.com/json-iterator/go
+  version: 0039f4ac3d5680243e7d0650c581e7ec0885ef5a
+- name: github.com/konsorten/go-windows-terminal-sequences
+  version: f55edac94c9bbba5d6182a4be46d86a2c9b5b50e
+- name: github.com/leodido/go-urn
+  version: a67a23e1c1af3c66528573bb86a87246477277c1
+- name: github.com/mattn/go-isatty
+  version: 1311e847b0cb909da63b5fecfb5370aa66236465
+- name: github.com/modern-go/concurrent
+  version: bacd9c7ef1dd9b15be4a9909b8ac7a4e313eec94
+- name: github.com/modern-go/reflect2
+  version: 94122c33edd36123c84d5368cfb2b69df93a0ec8
+- name: github.com/sirupsen/logrus
+  version: 839c75faf7f98a33d445d181f3018b5c3409a45e
+- name: github.com/tkanos/gonfig
+  version: e83209aed2d171bab5ffb312a1e630110481cb99
+- name: github.com/toorop/gin-logrus
+  version: 8887861896bb12c1d88aff1a93536f1a42226c29
+- name: github.com/ugorji/go
+  version: 247404d1fab0e48325e72fe995555979251857cf
+  subpackages:
+  - codec
+- name: golang.org/x/sys
+  version: 5ed2794edfdc1c54dfb61d619c5944285f35d444
+  subpackages:
+  - unix
+- name: gopkg.in/go-playground/validator.v8
+  version: 5f1438d3fca68893a817e4a66806cea46a9e4ebf
+- name: gopkg.in/go-playground/validator.v9
+  version: 884d31b8cad6a1ec877f2400d555924cea03bbea
+- name: gopkg.in/yaml.v2
+  version: 51d6538a90f86fe93ac480b35f37b2be17fef232
+testImports: []

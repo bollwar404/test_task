@@ -1,6 +1,7 @@
 package place
 
 import (
+	"fmt"
 	"test_task/logger"
 	"test_task/requests/aviasales"
 	"test_task/storage/cacheStore"
@@ -37,8 +38,11 @@ func FetchPlace(identifier, locale string) Places {
 			result = append(result, Place{item.Code, item.CityName, item.Name})
 		}
 	}
+	fmt.Print()
 
-	cacheStore.Set(cacheKey, string(utils.ToJSON(result, log)))
+	if len(result) != 0 {
+		cacheStore.Set(cacheKey, string(utils.ToJSON(result, log)))
+	}
 
 	return result
 }

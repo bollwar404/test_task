@@ -1,0 +1,13 @@
+package: test_task
+import:
+- package: github.com/gin-gonic/gin
+  version: ^1.4.0
+- package: github.com/go-redis/redis
+  version: ^6.15.3
+- package: github.com/sirupsen/logrus
+  version: ^1.4.2
+- package: github.com/tkanos/gonfig
+  version: ^1.0.0
+- package: github.com/toorop/gin-logrus
+- package: gopkg.in/go-playground/validator.v9
+  version: ^9.29.0

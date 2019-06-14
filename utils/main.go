@@ -2,6 +2,7 @@ package utils
 
 import (
 	"encoding/json"
+	"github.com/gin-gonic/gin"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -23,4 +24,8 @@ func ToJSON(data interface{}, log *log.Entry) []byte {
 	HandleError(err, log)
 
 	return jsonData
+}
+
+func Validate(field, tag string, c *gin.Context)  {
+
 }
