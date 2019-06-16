@@ -8,6 +8,14 @@ import (
 	"time"
 )
 
+type PlacesCacheSettings struct {
+	Ttl time.Duration
+}
+
+type CacheSettings struct {
+	Places PlacesCacheSettings
+}
+
 type PlacesAviasalesRequest struct {
 	Url string
 	Timeout time.Duration
@@ -40,6 +48,7 @@ type Config struct {
 	Server ServerConfig
 	Storage StorageConfig
 	Requests Requests
+	Cache CacheSettings
 }
 
 var Configuration = Config{}

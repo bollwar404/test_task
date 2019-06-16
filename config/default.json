@@ -17,5 +17,10 @@
         "Timeout": 2
       }
     }
+  },
+  "Cache": {
+    "Places": {
+      "Ttl": 3
+    }
   }
 }
